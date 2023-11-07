@@ -133,3 +133,18 @@ function ejercicio3() {
 }
 let punto3 = document.getElementById("btnPunto3");
 punto3.addEventListener("click", ejercicio3);
+
+function ejercicio4() {
+  let mensajePunto4 = document.getElementById("mensajePunto4");
+  let numero = parseInt(prompt("Ingrese el numero a evaluar por favor"));
+
+  if (numero === 0) {
+    mensajePunto4.textContent = `El numero ${numero} es Cero`;
+  } else if (numero % 2 == 0) {
+    mensajePunto4.textContent = `El numero ${numero} es Par`;
+  } else {
+    mensajePunto4.textContent = `El numero ${numero} es Impar`;
+  }
+}
+let punto4 = document.getElementById("btnPunto4");
+punto4.addEventListener("click", ejercicio4);
