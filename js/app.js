@@ -174,3 +174,16 @@ function ejercicio6() {
 }
 let punto6 = document.getElementById("btnPunto6");
 punto6.addEventListener("click", ejercicio6);
+
+function ejercicio7() {
+  let mensajePunto7 = document.getElementById("mensajePunto7");
+  let numero = parseInt(prompt("Ingrese el numero a estudiar: "));
+  let mensajeFinal = "";
+
+  for (let i = 1; i <= 10; i++) {
+    mensajeFinal += numero + ` x ` + i + ` = ` + numero * i +`<br>`;
+  }
+  mensajePunto7.innerHTML = mensajeFinal;
+}
+let punto7 = document.getElementById("btnPunto7");
+punto7.addEventListener("click", ejercicio7);
