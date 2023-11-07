@@ -90,6 +90,85 @@
           </div>
         </section>
         <hr />
+        <section>
+          <div class="col-12">
+            <h3 class="text-center py-2">Ejercicio 2</h3>
+            <p class="text-center py-2">
+              Crear un script que solicite al usuario mediante un prompt el
+              nombre de ciudades y almacenarlas en un arreglo, cuando el usuario
+              selecciona cancelar se debe mostrar el arreglo generado, luego
+              realizar las siguientes acciones:
+            </p>
+            <ul>
+              <li>Mostrar la longitud del arreglo.</li>
+              <li>
+                Mostrar en el documento web los ítems de las posiciones primera,
+                tercera y última.
+              </li>
+              <li>Añade en última posición la ciudad de París.</li>
+              <li>
+                Escribe por pantalla el elemento que ocupa la segunda posición.
+              </li>
+              <li>
+                Sustituye el elemento que ocupa la segunda posición por la
+                ciudad de 'Barcelona'.
+              </li>
+            </ul>
+            <div class="d-flex justify-content-center">
+              <button
+                class="btn btn-dark"
+                id="btnPunto2"
+                data-bs-toggle="modal"
+                data-bs-target="#ModalPunto2"
+              >
+                Ejecutar Función
+              </button>
+            </div>
+            <div
+              class="modal fade"
+              id="ModalPunto2"
+              tabindex="-1"
+              aria-labelledby="ModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="ModalLabel">Resultado</h2>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body py-2">
+                    <div class="fs-2">
+                      <h2 class="p-1">Datos de Importancia</h2>
+                    </div>
+                    <p class="ps-3" id="mensajePunto2"></p>
+                    <div class="fs-2">
+                      <h2 class="p-1">Arreglo de Ciudades</h2>
+                    </div>
+                    <p class="ps-3" id="mensajeArreglo2"></p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-bs-dismiss="modal"
+                    >
+                      Cerrar
+                    </button>
+                  </div>
+                  F
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr />
+
       </div>
     </main>
     <footer></footer>
