@@ -168,7 +168,61 @@
           </div>
         </section>
         <hr />
-
+        <section>
+          <div class="col-12">
+            <h3 class="text-center py-2">Ejercicio 3</h3>
+            <p class="text-center py-2">
+              Escribir un script que simule el lanzamiento de dos dados. Hacer
+              uso de la función Math.random para obtener números aleatorios
+              entre 1 y 6 para cada uno de los lanzamientos de los dados. Sumar
+              el resultado de lanzar dos dados y anotar en un array el número de
+              apariciones de dicha suma, repitiendo 50 veces esta operación.
+            </p>
+            <div class="d-flex justify-content-center">
+              <button
+                class="btn btn-dark"
+                id="btnPunto3"
+                data-bs-toggle="modal"
+                data-bs-target="#ModalPunto3"
+              >
+                Ejecutar Función
+              </button>
+            </div>
+            <div
+              class="modal fade"
+              id="ModalPunto3"
+              tabindex="-1"
+              aria-labelledby="ModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="ModalLabel">Resultado</h2>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body d-flex justify-content-center py-2">
+                    <p class="ps-3" id="mensajePunto3"></p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-bs-dismiss="modal"
+                    >
+                      Cerrar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
     <footer></footer>

@@ -69,3 +69,67 @@ function ejercicio2() {
 }
 let punto2 = document.getElementById("btnPunto2");
 punto2.addEventListener("click", ejercicio2);
+
+function ejercicio3() {
+  let mensajePunto3 = document.getElementById("mensajePunto3");
+  let sumas = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+
+  for (let i = 0; i < 50; i++) {
+    let dado1 = Math.floor(Math.random() * 6) + 1;
+    let dado2 = Math.floor(Math.random() * 6) + 1;
+    let suma = dado1 + dado2;
+    switch (suma) {
+      case 2:
+        sumas[0]++;
+        break;
+      case 3:
+        sumas[1]++;
+        break;
+      case 4:
+        sumas[2]++;
+        break;
+      case 5:
+        sumas[3]++;
+        break;
+      case 6:
+        sumas[4]++;
+        break;
+      case 7:
+        sumas[5]++;
+        break;
+      case 8:
+        sumas[6]++;
+        break;
+      case 9:
+        sumas[7]++;
+        break;
+      case 10:
+        sumas[8]++;
+        break;
+      case 11:
+        sumas[9]++;
+        break;
+      case 12:
+        sumas[10]++;
+        break;
+      default:
+        break;
+    }
+  }
+  mensajePunto3.innerHTML = `<table>
+  <tr><td>Suma</td><td>Apariciones</td></tr>
+  <tr><td>2</td><td>${sumas[0]}</td></tr>
+  <tr><td>3</td><td>${sumas[1]}</td></tr>
+  <tr><td>4</td><td>${sumas[2]}</td></tr>
+  <tr><td>5</td><td>${sumas[3]}</td></tr>
+  <tr><td>6</td><td>${sumas[4]}</td></tr>
+  <tr><td>7</td><td>${sumas[5]}</td></tr>
+  <tr><td>8</td><td>${sumas[6]}</td></tr>
+  <tr><td>9</td><td>${sumas[7]}</td></tr>
+  <tr><td>10</td><td>${sumas[8]}</td></tr>
+  <tr><td>11</td><td>${sumas[9]}</td></tr>
+  <tr><td>12</td><td>${sumas[10]}</td></tr>
+  </table>`;
+}
+let punto3 = document.getElementById("btnPunto3");
+punto3.addEventListener("click", ejercicio3);
