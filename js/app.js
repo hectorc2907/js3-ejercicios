@@ -148,3 +148,18 @@ function ejercicio4() {
 }
 let punto4 = document.getElementById("btnPunto4");
 punto4.addEventListener("click", ejercicio4);
+
+function ejercicio5() {
+  let mensajePunto5 = document.getElementById("mensajePunto5");
+  let cadenaTexto = prompt("Ingrese el texto a evaluar");
+
+  if (cadenaTexto === cadenaTexto.toUpperCase()) {
+    mensajePunto5.textContent = `la cadena de texto "${cadenaTexto}" esta en Mayusculas`;
+  } else if (cadenaTexto === cadenaTexto.toLocaleLowerCase()) {
+    mensajePunto5.textContent = `la cadena de texto "${cadenaTexto}" esta en Minusculas`;
+  } else {
+    mensajePunto5.textContent = `la cadena de texto "${cadenaTexto}" es una mezcla de ambas`;
+  }
+}
+let punto5 = document.getElementById("btnPunto5");
+punto5.addEventListener("click", ejercicio5);
