@@ -1,7 +1,11 @@
-table{
-    border: 1px solid blue;
+table {
+  border: 1px solid black;
 }
-td{
-    border: 1px solid blue;
-    padding: 10px;
+tr {
+  border: 1px solid black;
+  text-align: center;
+}
+td {
+  border: 1px solid black;
+  padding: 2px 5px;
 }
