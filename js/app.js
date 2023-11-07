@@ -133,3 +133,59 @@ function ejercicio3() {
 }
 let punto3 = document.getElementById("btnPunto3");
 punto3.addEventListener("click", ejercicio3);
+
+function ejercicio4() {
+  let mensajePunto4 = document.getElementById("mensajePunto4");
+  let numero = parseInt(prompt("Ingrese el numero a evaluar por favor"));
+
+  if (numero === 0) {
+    mensajePunto4.textContent = `El numero ${numero} es Cero`;
+  } else if (numero % 2 == 0) {
+    mensajePunto4.textContent = `El numero ${numero} es Par`;
+  } else if (isNaN(numero)){
+    mensajePunto4.textContent = `El dato ingresado no esta definido`;
+  } else {
+    mensajePunto4.textContent = `El numero ${numero} es Impar`;
+  }
+}
+let punto4 = document.getElementById("btnPunto4");
+punto4.addEventListener("click", ejercicio4);
+
+function ejercicio5() {
+  let mensajePunto5 = document.getElementById("mensajePunto5");
+  let cadenaTexto = prompt("Ingrese el texto a evaluar");
+
+  if (cadenaTexto === cadenaTexto.toUpperCase()) {
+    mensajePunto5.textContent = `la cadena de texto "${cadenaTexto}" esta en Mayusculas`;
+  } else if (cadenaTexto === cadenaTexto.toLocaleLowerCase()) {
+    mensajePunto5.textContent = `la cadena de texto "${cadenaTexto}" esta en Minusculas`;
+  } else {
+    mensajePunto5.textContent = `la cadena de texto "${cadenaTexto}" es una mezcla de ambas`;
+  }
+}
+let punto5 = document.getElementById("btnPunto5");
+punto5.addEventListener("click", ejercicio5);
+
+function ejercicio6() {
+  let mensajePunto6 = document.getElementById("mensajePunto6");
+  let base = parseInt(prompt("Ingrese la base del rectanculo: "));
+  let altura = parseInt(prompt("Ingrese la altura del rectanculo: "));
+  let perimetro = 2 * (base + altura);
+
+  mensajePunto6.innerHTML = `P = 2 * (${base} + ${altura})<br>P = ${perimetro}`;
+}
+let punto6 = document.getElementById("btnPunto6");
+punto6.addEventListener("click", ejercicio6);
+
+function ejercicio7() {
+  let mensajePunto7 = document.getElementById("mensajePunto7");
+  let numero = parseInt(prompt("Ingrese el numero a estudiar: "));
+  let mensajeFinal = "";
+
+  for (let i = 1; i <= 10; i++) {
+    mensajeFinal += numero + ` x ` + i + ` = ` + numero * i +`<br>`;
+  }
+  mensajePunto7.innerHTML = mensajeFinal;
+}
+let punto7 = document.getElementById("btnPunto7");
+punto7.addEventListener("click", ejercicio7);
