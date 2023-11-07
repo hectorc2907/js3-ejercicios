@@ -163,3 +163,14 @@ function ejercicio5() {
 }
 let punto5 = document.getElementById("btnPunto5");
 punto5.addEventListener("click", ejercicio5);
+
+function ejercicio6() {
+  let mensajePunto6 = document.getElementById("mensajePunto6");
+  let base = parseInt(prompt("Ingrese la base del rectanculo: "));
+  let altura = parseInt(prompt("Ingrese la altura del rectanculo: "));
+  let perimetro = 2 * (base + altura);
+
+  mensajePunto6.innerHTML = `P = 2 * (${base} + ${altura})<br>P = ${perimetro}`;
+}
+let punto6 = document.getElementById("btnPunto6");
+punto6.addEventListener("click", ejercicio6);
