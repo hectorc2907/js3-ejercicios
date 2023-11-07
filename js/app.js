@@ -142,6 +142,8 @@ function ejercicio4() {
     mensajePunto4.textContent = `El numero ${numero} es Cero`;
   } else if (numero % 2 == 0) {
     mensajePunto4.textContent = `El numero ${numero} es Par`;
+  } else if (isNaN(numero)){
+    mensajePunto4.textContent = `El dato ingresado no esta definido`;
   } else {
     mensajePunto4.textContent = `El numero ${numero} es Impar`;
   }
