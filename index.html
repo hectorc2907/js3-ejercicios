@@ -33,6 +33,63 @@
           </h1>
         </section>
         <hr />
+        <section>
+          <div class="col-12">
+            <h3 class="text-center py-2">Ejercicio 1</h3>
+            <p class="text-center py-2">
+              Crear un array llamado meses y que almacene el nombre de los doce
+              meses del año. Mostrar por pantalla en forma de lista los doce
+              nombres del arreglo.
+            </p>
+            <div class="d-flex justify-content-center">
+              <button
+                class="btn btn-dark"
+                id="btnPunto1"
+                data-bs-toggle="modal"
+                data-bs-target="#ModalPunto1"
+              >
+                Ejecutar Función
+              </button>
+            </div>
+            <div
+              class="modal fade"
+              id="ModalPunto1"
+              tabindex="-1"
+              aria-labelledby="ModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="ModalLabel">Resultado</h2>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="fs-2">
+                    <h2 class="pt-4 ps-4">Lista de Meses</h2>
+                  </div>
+                  <div class="modal-body py-2">
+                    <p class="ps-3" id="mensajePunto1"></p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-bs-dismiss="modal"
+                    >
+                      Cerrar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr />
       </div>
     </main>
     <footer></footer>
